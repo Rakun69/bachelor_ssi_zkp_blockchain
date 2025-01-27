@@ -1,6 +1,11 @@
-require("@nomicfoundation/hardhat-toolbox");
+require("@nomiclabs/hardhat-waffle");
 
-/** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.28",
+  solidity: "0.8.0",
+  networks: {
+    goerli: {
+      url: "https://goerli.infura.io/v3/YOUR_INFURA_PROJECT_ID",
+      accounts: ["YOUR_PRIVATE_KEY"]
+    }
+  }
 };
